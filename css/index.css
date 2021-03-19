@@ -1,0 +1,686 @@
+.boton{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem;
+    margin-top: 3rem;
+    display: inline-block; /*o solo block es más ancho y lindo*/
+    text-align: center;
+
+}
+
+@media (max-width: 500px){
+    .boton{
+        padding: 1rem 2rem;
+
+    }
+}
+
+.boton-center{ /*alinear un boton, me interesa para reservar turnos, debes crear el boton */
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+@media (max-width: 500px){
+    .boton-center{
+        padding: 1rem 2rem;
+
+    }
+}
+
+.boton-amarillo{
+    background-color: black;
+}
+
+.agenda{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color:rgb(7, 7, 7);
+}
+
+@media (max-width: 500px){
+    .agenda{
+        font-size: 20px;
+        margin: 2rem;
+    }
+}
+
+/* The animation code */
+@media  (min-width: 480px){ 
+.Contenedores{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    margin-left: 2rem;
+    align-items: flex-end;    
+}
+}
+
+
+
+
+
+@media  (min-width: 600px){ 
+.contenedor-anuncios {
+    display:flex; 
+    justify-content: space-between;
+    
+ }
+
+}
+
+
+.anuncios{
+    flex-basis:calc(33.3% - 1rem);
+    text-align: center;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.contenido-anuncio{
+    PADDING: 2rem;
+    
+
+}
+
+.contenido-anuncio p {
+    padding-top: 5vh;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+
+
+@keyframes opacity-anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/*video*/
+
+.contenido__video{
+    background: #000000;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;*/
+   }
+   
+   /* Estilos para la etiqueta "video" con la calse (.video)  */
+   .video{
+    position: absolute;
+    max-width: 300%;
+    width: 100%;
+   }
+   
+   /* media queries (personalizarlo a su antojo)*/
+   @media(min-width: 900px){
+    .video{
+     width: 300%;
+    }
+   }
+   @media(max-width: 480px){
+    .contenido__video{
+     width: 380px;
+     height: 30vh;
+    }
+   }
+ 
+   
+
+
+/*.fondo {
+    background-clip: content-box;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}*/
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    padding-top: 1%!important;
+    left: 0;
+}
+
+.navbar {
+    content: '';
+    width: 100%;
+    position: absolute;
+    justify-content: flex-end;
+    height: 10vh;
+    align-items: center;
+    background: #030303; /*barra de arriba*/
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.navbar a {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(250, 147, 12); /*colores al posicionarse sobre la barra de arriba*/
+}
+
+.nosotros {
+    margin: 2%;
+    width: 45%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    align-items: center;
+}
+
+.solid {
+    border-top: 3px solid #F2E205;
+}
+
+
+.Actitud h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+@media (max-width: 480px){
+    .Actitud h2{
+    font-size: 40px;
+}
+}
+
+
+
+.nosotros h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color:rgb(7, 7, 7);
+}
+
+.nosotros_cuerpo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color:white;
+}
+
+
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+}
+
+.logo {
+    width: 19%;
+    animation: opacity-anim 1s ease-in;
+}
+
+.nosotros p {
+    padding-top: 5vh;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+@media (max-width: 480px){
+    .Nosotros p{
+    font-size: 40px;
+    font-family:Arial, Helvetica, cursive;
+}
+}
+
+.nosotrosimg {
+    margin: 2%;
+    width: 42%;
+    border-radius: 50%;
+}
+
+.stickervideo{
+    margin: 2%;
+    width: 45%;
+    border-radius: 50%;
+}
+
+.nosotrosimg img {
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    width: 100%;
+ 
+}
+
+.fondo-productos {
+    background: #FFFFFF;
+    width: 100%;
+    min-height: 40vh;
+    display: inline-block;
+}
+
+.nosotros-productos {
+    height: 100%;
+}
+
+.galeria {
+    width: 100%;
+    /* max-width: 1100px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.sect-productos {
+   width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.galeria img {
+    width: 45%;
+    margin-bottom: 30px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.fondo-productos h2 {
+    text-align: center;
+    padding: 1em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+
+.fondo-productos .solid {
+    text-align: center;
+}
+
+.galeria img:hover {
+    opacity: 0.8;
+}
+
+.sect-mapa {
+    text-align: center;
+    width: 100%;
+}
+
+.mapa {
+    text-align: center;
+    margin-bottom: 2%;
+    width: 50%;
+    display: inline-block;
+}
+
+.mapa h2 {
+    text-align: center;
+    padding: 1%;
+}
+
+.formulario {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 5%;
+    background-color: #000000;
+}
+
+.formulario form {
+    width: 100%;
+}
+
+.contacto {
+    padding-top: 2em;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contacto h2 {
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.contacto p {
+    font-size: 1.2rem;
+}
+
+.centerImage {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+legend {
+    font-size: 2.4rem;
+    color: #4d4c4c;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+.forma-contacto {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sect-historia {
+    text-align: center;
+}
+
+.container-form {
+    width: 40%;
+    padding: 5%;
+}
+
+
+/* Page content */
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.cta {
+    background: none;
+    color: white;
+    width: 30%;
+    height: 12%;
+    border: 2px solid #000000;
+    font-size: 1.2em;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:before {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.historia-titulo {
+    height: 20%;
+}
+
+.cta:before {
+    display: block;
+    background: rgba(255, 255, 255, .5);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.cta:hover {
+    background: #D99B29;
+    cursor: pointer;
+}
+
+.cta:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+}
+
+.cta.cta:hover::after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+.parrafo-historia {
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+.container-parrafo-historia {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    padding: 5px 0 10px 0;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+}
+
+i {
+    font-size: 40px;
+    color: white;
+}
+
+.facebook:hover {
+    cursor: pointer;
+    color: rgb(250, 147, 12);
+}
+
+.instagram:hover {
+    cursor: pointer;
+    color: rgb(250, 147, 12);
+}
+
+.whatsapp:hover {
+    cursor: pointer;
+    color: rgb(250, 147, 12);
+}
+
+
+.container-historia {
+    height: 40vh;
+}
+
+
+/* parallax */
+
+.parallax::before {
+    width: 100%!important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
+}
+
+.contacto-form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-form::before {
+    background-color:#000000;
+    content: '';
+    width: 100%!important;
+}
+
+.newletter {
+    position: relative;
+    height: auto;
+}
+
+.navega {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: row;
+}
+
+@media (max-width: 650px) {
+    .navega a {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px)  {
+    .navbar {
+        height: auto;
+        min-height: 10vh;
+        text-align: center;
+    }
+    .navega {
+        display: none;
+    }
+    .navega a {
+        display: block;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .mobile-menu a {
+        padding-top: 4%;
+    }
+    .logo {
+        width: 50%;
+    }
+    .nosotros {
+        width: 100%;
+    }
+    .nosotrosimg {
+        width: 100%;
+    }
+    .galeria img {
+        width: 100%;
+    }
+    .mapa {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .container-parrafo-historia {
+        height: auto;
+    }
+    .parrafo-historia {
+        width: 100%;
+    }
+    .container-historia {
+        height: auto;
+        padding: 10%;
+    }
+    .container-form {
+        width: 100%;
+    }
+
+  
+
+}
+
+
+
